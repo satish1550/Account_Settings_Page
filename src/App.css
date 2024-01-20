@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.leftbar {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
