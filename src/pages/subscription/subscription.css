@@ -1,0 +1,154 @@
+.pricing {
+    width: 100%;
+    height: 100%;
+}
+
+.pricingTop {
+    margin: 40px 50px;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.pricingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricingTopText p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 97%;
+    margin-bottom: 60px;
+}
+
+.pricingCenter {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree {
+    width: 342px;
+    height: 490px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    z-index: 9;
+}
+
+.cardTwo {
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.hr {
+    max-width: 290px;
+    height: 1px;
+    background: #000;
+    margin: 0 auto;
+}
+
+.cardOneCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16.5px;
+    font-weight: 300;
+    line-height: 200%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.cardOneBottom {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.free {
+    display: flex;
+    width: 261px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 120%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.cardOneTop,
+.cardTwoTop,
+.cardThreeTop {
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 150%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.cardTwoCenter,
+.cardThreeCenter {
+    margin-top: 60%;
+    text-align: center;
+    font-size: 16.5px;
+}
+
+.cardTwoBottom {
+    /* margin-top: 10%; */
+    text-align: center;
+    font-size: 16.5px;
+}
+
+.cardTwoButton {
+    font-size: 18px;
+    font-weight: bold;
+    background: #252525;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+}
+
+.cardThreeCenter>p {
+    color: #000;
+    font-weight: 700;
+}
+
+.adventurer {
+    margin-top: -30px;
+}
+
+.recomended {
+    display: flex;
+    height: 32px;
+    font-size: 9px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    background: #252525;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}

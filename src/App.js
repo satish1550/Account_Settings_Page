@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Leftbar from "./components/leftbar/Leftbar";
+import Settings from "./pages/settings/Settings";
+import Subscription from "./pages/subscription/Subscription";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  const [name, setName] = useState("Satish Daraboina");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        <div className="leftbar">
+          <Leftbar name={name} />
+        </div>
+        <div className="main-content">
+          <Switch>
+            <Route exact path="/">
+              <Settings name={name} setName={setName} />
+            </Route>
+            <Route path="/subscription">
+              <Subscription />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
